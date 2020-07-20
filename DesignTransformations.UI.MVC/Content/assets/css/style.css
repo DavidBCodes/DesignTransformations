@@ -10,7 +10,9 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  /*color: #444444;*/
+  /*changed the color of the font to white -tle 2020-07-20*/
+  color: white;
 }
 
 a {
@@ -414,7 +416,8 @@ section {
 }
 
 .section-bg {
-  background-color: #f7fbfe;
+    background-color: #091636; /*#f7fbfe;*/
+    /*replace with correct shade of blue - tle 2020-07-20*/
 }
 
 .section-title {
