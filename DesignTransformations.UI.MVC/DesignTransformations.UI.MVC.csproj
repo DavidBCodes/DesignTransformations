@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -59,6 +58,9 @@
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -157,11 +159,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -184,40 +181,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\css\style.css" />
-    <Content Include="Content\assets\img\about.jpg" />
-    <Content Include="Content\assets\img\apple-touch-icon.png" />
     <Content Include="Content\assets\img\coverimage.png" />
-    <Content Include="Content\assets\img\favicon.png" />
-    <Content Include="Content\assets\img\furniture.GIF" />
-    <Content Include="Content\assets\img\llcover.png" />
-    <Content Include="Content\assets\img\lllinkedin.jpg" />
-    <Content Include="Content\assets\img\portfolio-details-1.jpg" />
-    <Content Include="Content\assets\img\portfolio-details-2.jpg" />
-    <Content Include="Content\assets\img\portfolio-details-3.jpg" />
-    <Content Include="Content\assets\img\cover.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Content\assets\img\hero-bg - Copy.png" />
+    <Content Include="Content\assets\img\hero-bg.jpg" />
+    <Content Include="Content\assets\img\portfolio\android-chrome-192x192.png" />
+    <Content Include="Content\assets\img\portfolio\android-chrome-512x512.png" />
+    <Content Include="Content\assets\img\portfolio\apple-touch-icon.png" />
+    <Content Include="Content\assets\img\portfolio\AustinRemodelLivingRoom.jpg" />
+    <Content Include="Content\assets\img\portfolio\AustinRemodelKitchen1.jpg" />
+    <Content Include="Content\assets\img\portfolio\AustinRemodelSectionCut.jpg" />
+    <Content Include="Content\assets\img\portfolio\favicon-16x16.png" />
+    <Content Include="Content\assets\img\portfolio\favicon-32x32.png" />
+    <Content Include="Content\assets\img\portfolio\favicon.ico" />
     <Content Include="Content\assets\img\portfolio\KitchenAbove.jpg" />
     <Content Include="Content\assets\img\portfolio\kitchensketch.jpg" />
     <Content Include="Content\assets\img\portfolio\KitchenTopView.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-1.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-2.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-3.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-4.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-5.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-6.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-7.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-8.jpg" />
-    <Content Include="Content\assets\img\portfolio\portfolio-9.jpg" />
-    <Content Include="Content\assets\img\team\team-1.jpg" />
-    <Content Include="Content\assets\img\team\team-2.jpg" />
-    <Content Include="Content\assets\img\team\team-3.jpg" />
-    <Content Include="Content\assets\img\testimonials\testimonials-1.jpg" />
-    <Content Include="Content\assets\img\testimonials\testimonials-2.jpg" />
-    <Content Include="Content\assets\img\testimonials\testimonials-3.jpg" />
-    <Content Include="Content\assets\img\testimonials\testimonials-4.jpg" />
-    <Content Include="Content\assets\img\testimonials\testimonials-5.jpg" />
-    <Content Include="Content\assets\img\work.jpg" />
+    <Content Include="Content\assets\img\portfolio\LivingRoom.png" />
+    <Content Include="Content\assets\img\portfolio\LIVINGROOM2.jpg" />
+    <Content Include="Content\assets\img\portfolio\LivingRoomReal.jpg" />
+    <Content Include="Content\assets\img\portfolio\LivingRoomSectionCut.jpg" />
+    <Content Include="Content\assets\img\portfolio\lllinkedin.jpg" />
+    <Content Include="Content\assets\img\portfolio\PA.gif" />
+    <Content Include="Content\assets\img\portfolio\PAHomeKitchen.jpg" />
+    <Content Include="Content\assets\img\portfolio\PAHomeTopView.jpg" />
+    <Content Include="Content\assets\img\portfolio\selfie.jpg" />
+    <Content Include="Content\assets\img\portfolio\work.jpg" />
     <Content Include="Content\assets\js\main.js" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -264,81 +252,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="_Archive\assets\css\style.css" />
-    <Content Include="_Archive\assets\img\about.jpg" />
-    <Content Include="_Archive\assets\img\android-chrome-192x192.png" />
-    <Content Include="_Archive\assets\img\android-chrome-512x512.png" />
-    <Content Include="_Archive\assets\img\apple-touch-icon.png" />
-    <Content Include="_Archive\assets\img\favicon-16x16.png" />
-    <Content Include="_Archive\assets\img\favicon-32x32.png" />
-    <Content Include="_Archive\assets\img\favicon.ico" />
-    <Content Include="_Archive\assets\img\favicon.png" />
-    <Content Include="_Archive\assets\img\portfolio-details-1.jpg" />
-    <Content Include="_Archive\assets\img\portfolio-details-2.jpg" />
-    <Content Include="_Archive\assets\img\portfolio-details-3.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-1.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-2.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-3.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-4.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-5.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-6.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-7.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-8.jpg" />
-    <Content Include="_Archive\assets\img\portfolio\portfolio-9.jpg" />
-    <Content Include="_Archive\assets\img\team\team-1.jpg" />
-    <Content Include="_Archive\assets\img\team\team-2.jpg" />
-    <Content Include="_Archive\assets\img\team\team-3.jpg" />
-    <Content Include="_Archive\assets\img\testimonials\testimonials-1.jpg" />
-    <Content Include="_Archive\assets\img\testimonials\testimonials-2.jpg" />
-    <Content Include="_Archive\assets\img\testimonials\testimonials-3.jpg" />
-    <Content Include="_Archive\assets\img\testimonials\testimonials-4.jpg" />
-    <Content Include="_Archive\assets\img\testimonials\testimonials-5.jpg" />
-    <Content Include="_Archive\assets\js\main.js" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap-grid.css" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap.css" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap.min.css" />
-    <Content Include="_Archive\assets\vendor\bootstrap\js\bootstrap.bundle.js" />
-    <Content Include="_Archive\assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
-    <Content Include="_Archive\assets\vendor\bootstrap\js\bootstrap.js" />
-    <Content Include="_Archive\assets\vendor\bootstrap\js\bootstrap.min.js" />
-    <Content Include="_Archive\assets\vendor\boxicons\css\animations.css" />
-    <Content Include="_Archive\assets\vendor\boxicons\css\boxicons.css" />
-    <Content Include="_Archive\assets\vendor\boxicons\css\boxicons.min.css" />
-    <Content Include="_Archive\assets\vendor\boxicons\css\transformations.css" />
-    <Content Include="_Archive\assets\vendor\boxicons\fonts\boxicons.svg" />
-    <Content Include="_Archive\assets\vendor\counterup\counterup.min.js" />
-    <Content Include="_Archive\assets\vendor\icofont\icofont.min.css" />
-    <Content Include="_Archive\assets\vendor\isotope-layout\isotope.pkgd.js" />
-    <Content Include="_Archive\assets\vendor\isotope-layout\isotope.pkgd.min.js" />
-    <Content Include="_Archive\assets\vendor\jquery.easing\jquery.easing.min.js" />
-    <Content Include="_Archive\assets\vendor\jquery\jquery.min.js" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\assets\ajax-loader.gif" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\assets\owl.carousel.css" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\assets\owl.carousel.min.css" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\assets\owl.theme.default.css" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\assets\owl.theme.default.min.css" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\assets\owl.theme.green.css" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\assets\owl.theme.green.min.css" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\assets\owl.video.play.png" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\owl.carousel.js" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\owl.carousel.min.js" />
-    <Content Include="_Archive\assets\vendor\php-email-form\changelog.txt" />
-    <Content Include="_Archive\assets\vendor\php-email-form\validate.js" />
-    <Content Include="_Archive\assets\vendor\venobox\venobox.css" />
-    <Content Include="_Archive\assets\vendor\venobox\venobox.js" />
-    <Content Include="_Archive\assets\vendor\venobox\venobox.min.css" />
-    <Content Include="_Archive\assets\vendor\venobox\venobox.min.js" />
-    <Content Include="_Archive\assets\vendor\waypoints\jquery.waypoints.min.js" />
-    <Content Include="_Archive\changelog.txt" />
-    <Content Include="_Archive\forms\contact.php" />
-    <Content Include="_Archive\forms\Readme.txt" />
-    <Content Include="_Archive\index.html" />
-    <Content Include="_Archive\inner-page.html" />
-    <Content Include="_Archive\portfolio-details.html" />
-    <Content Include="_Archive\Readme.txt" />
+    <Content Include="Views\Home\PAHomeTopView.jpg" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
@@ -358,6 +272,8 @@
     <Content Include="Content\assets\vendor\jquery\jquery.min.map" />
     <Content Include="Content\assets\vendor\owl.carousel\LICENSE" />
     <Content Include="Content\assets\vendor\owl.carousel\README.md" />
+    <Content Include="Content\assets\img\portfolio\site.webmanifest" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -419,26 +335,6 @@
     <Content Include="Views\Account\DisplayEmail.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap.css.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\js\bootstrap.js.map" />
-    <Content Include="_Archive\assets\vendor\bootstrap\js\bootstrap.min.js.map" />
-    <Content Include="_Archive\assets\vendor\boxicons\fonts\boxicons.eot" />
-    <Content Include="_Archive\assets\vendor\boxicons\fonts\boxicons.ttf" />
-    <Content Include="_Archive\assets\vendor\boxicons\fonts\boxicons.woff" />
-    <Content Include="_Archive\assets\vendor\boxicons\fonts\boxicons.woff2" />
-    <Content Include="_Archive\assets\vendor\icofont\fonts\icofont.woff" />
-    <Content Include="_Archive\assets\vendor\icofont\fonts\icofont.woff2" />
-    <Content Include="_Archive\assets\vendor\jquery\jquery.min.map" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\LICENSE" />
-    <Content Include="_Archive\assets\vendor\owl.carousel\README.md" />
-    <Content Include="_Archive\assets\img\site.webmanifest" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -480,11 +376,12 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

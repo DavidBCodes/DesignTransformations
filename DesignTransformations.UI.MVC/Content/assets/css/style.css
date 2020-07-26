@@ -10,11 +10,13 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: white;
+  /*changed the color of the font to white -tle 2020-07-20*/
+  color: white;
 }
 
 a {
-  color: #3498db;
+  color: navy;
 }
 
 a:hover {
@@ -23,7 +25,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family:  Helvetica, sans-serif, sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -37,18 +39,18 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99999;
 }
 
-.back-to-top i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  background: #3498db;
-  color: #fff;
-  transition: all 0.4s;
-}
+    .back-to-top i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background: #193244;
+        color: #fff;
+        transition: all 0.4s;
+    }
 
 .back-to-top i:hover {
   background: #57aae1;
@@ -234,24 +236,24 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
-.mobile-nav-toggle i {
-  color: #384046;
-}
+    .mobile-nav-toggle i {
+        color: #09094e;
+    }
 
 .mobile-nav {
-  position: fixed;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  z-index: 9999;
-  overflow-y: auto;
-  background: #fff;
-  transition: ease-in-out 0.2s;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 10px;
-  padding: 10px 0;
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 40px;
+    padding: 50px 0;
 }
 
 .mobile-nav * {
@@ -270,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #3498db;
+  color: navy;
   text-decoration: none;
 }
 
@@ -330,12 +332,13 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    height: 60vh;
-    background-image: url("../img/cover.jpg") ;
+    height: 50vh;
+    background-image: url('../img/coverimage.png');
     background-size: cover;
     position: relative;
     margin-top: 70px;
     padding: 0;
+    filter: brightness(1.5);
 }
 
 #hero:before {
@@ -360,9 +363,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#hero h1 span {
-  border-bottom: 4px solid #3498db;
-}
+    #hero h1 span {
+        border-bottom: 4px solid #17384e;
+    }
 
 #hero h2 {
   color: rgba(255, 255, 255, 0.8);
@@ -410,11 +413,13 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+    padding: 60px 0;
+    margin-top: 30px;
 }
 
 .section-bg {
-  background-color: #f7fbfe;
+    background-color: #091636; /*#f7fbfe;*/
+    /*replace with correct shade of blue - tle 2020-07-20*/
 }
 
 .section-title {
@@ -771,6 +776,7 @@ section {
 .portfolio .portfolio-item figure .link-preview i, .portfolio .portfolio-item figure .link-details i {
   color: #384046;
   line-height: 0;
+  position:center;
 }
 
 .portfolio .portfolio-item figure .link-preview:hover, .portfolio .portfolio-item figure .link-details:hover {
@@ -1086,14 +1092,14 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
-  background: #3498db;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
+    .contact .php-email-form button[type="submit"] {
+        background: #091636;
+        border: 0;
+        padding: 10px 24px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 4px;
+    }
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #5faee3;
@@ -1403,4 +1409,8 @@ section {
   background: #5faee3;
   color: #fff;
   text-decoration: none;
+}
+
+p {
+    font-family: "Abel", sans-serif;
 }

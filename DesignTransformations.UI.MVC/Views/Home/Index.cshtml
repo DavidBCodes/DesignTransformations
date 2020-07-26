@@ -20,23 +20,26 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="~/Content/assets/img/work.jpg" class="img-fluid" alt="">
+                       
+                        <img src="~/Content/assets/img/portfolio/PA.gif" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <style>
 
                             h3 {
                                 text-align: center;
+                                padding: 10px;
                             }
 
                             body {
                                 background-color: #091636;
+                                
                             }
                         </style>
                         <h3>Let 3D Design Transformations bring your designs to life!</h3>
                         <ul>
-                            <li><box-icon type="solid" name="chevrons-right"></box-icon> Create accurate, detailed and realistic 3-D renderings to offer you a competitive advantage in the field</li>
-                            <li>• Provide Interior Designers, Builders and Remodeling Professionals 3-D renderings of their design ideas and concepts to help clients visualize their projects</li>
+                            <li>• Create accurate, detailed and realistic 3D renderings to offer you a competitive advantage in the field</li>
+                            <li>• Provide Interior Designers, Builders and Remodeling Professionals 3D renderings of their design ideas and concepts to help clients visualize their projects</li>
                             <li>• Free up your time to allow you to focus on what really matters: Your clients!</li>
                         </ul>
                     </div>
@@ -56,7 +59,7 @@
             
                 <div class="section-title">
                     <h2> Services</h2>
-                    <p><em> “It took a lot of work to be perfect. If you didn’t want to break a sweat, there was no point in even bothering.”</em></p>
+                    <p style="color: white"><em> What can we do for you?</em></p>
                 </div>
 
                 <div class="row">
@@ -64,7 +67,7 @@
                         <div class="icon-box">
                             <i class="icofont-computer"> </i>
                             <h4> <a href="#"> 3D Renderings</a> </h4>
-                            <p>  Provide photorealistic 3D renderings for your project to give your clients.</p>
+                            <p>  Provide photorealistic 3D renderings for your project to give your clients a picture perfect visualization of the final project before its done.</p>
                         </div>
                     </div>
                     <div class="col-md-6 mt-4 mt-lg-0">
@@ -89,8 +92,8 @@
                     <div class="col-md-6 mt-4">
                         <div class="icon-box">
                             <i class="icofont-settings"> </i>
-                            <h4> <a href="#"> Nemo Enim</a> </h4>
-                            <p> Let 3-D Design Transformations bring your designs to life!</p>
+                            <h4> <a href="#"> Plan Now and Build Later</a> </h4>
+                            <p> Let 3D Design Transformations bring your designs to life. Save time and money for your future build by planning properly.</p>
                         </div>
                     </div>
                 </div>
@@ -118,10 +121,13 @@
 
                 <div class="section-title">
                     <h2> Portfolio</h2>
-                    <p><em> Here are some examples of my work...</em></p>
+                    <p style = "color:white">
+                        <em> Here are some examples of my work...</em></p>
                 </div>
 
-                <div class="row">
+
+                @*removed dynamic menu for portfolio*@
+                @*<div class="row">
                     <div class="col-lg-12">
                         <ul id="portfolio-flters">
                             <li data-filter="*" class="filter-active"> All</li>
@@ -130,51 +136,51 @@
                             <li data-filter=".filter-web"> Overhead</li>
                         </ul>
                     </div>
-                </div>
+                </div>*@
 
                 <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/content/assets/img/portfolio/AustinRemodelSectionCut.jpg" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/AustinRemodelSectionCut.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                <a href="portfolio-details.html" @*class="link-details" title="More Details"> <i class="bx bx-link"> </i*@> </a>
+                            </figure>
 
+                            <div class="portfolio-info">
+                                <h4> <a href="portfolio-details.html"> Austin Remodel - Plan View</a> </h4>
+                                @*<p> Overhead</p>*@
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="~/content/assets/img/portfolio/kitchensketch.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio/kitchensketch.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
+                                <img src="~/content/assets/img/portfolio/AustinRemodelKitchen1.jpg" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/AustinRemodelKitchen1.jpg" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                <a href="portfolio-details.html" @*class="link-details" title="More Details"> <i class="bx bx-link">*@ </i> </a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> Sketch 1</a> </h4>
-                                <p> Sketch</p>
+                                <h4> <a href="portfolio-details.html"> Austin Remodel - Kitchen</a> </h4>
+                                @*<p> Sketch</p>*@
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="~/content/assets/img/portfolio/KitchenAbove.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio/KitchenAbove.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
-                            </figure>
 
-                            <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> 45°</a> </h4>
-                                <p> 45°</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="~/content/assets/img/portfolio/KitchenTopView.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio//KitchenTopView.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
+                                <img src="~/content/assets/img/portfolio/AustinRemodelLivingRoom.jpg" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/AustinRemodelLivingRoom.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                <a href="portfolio-details.html"> @*class="link-details" title="More Details">*@ @*<i class="bx bx-link"> </i>*@ </a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> Overhead</a> </h4>
-                                <p> Overhead</p>
+                                <h4> <a href="portfolio-details.html"> Austin Remodel - Living Room</a> </h4>
+                                @*<p> Overhead</p>*@
                             </div>
                         </div>
                     </div>
@@ -182,14 +188,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="~/content/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio/portfolio-4.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
+                                <img src="~/content/assets/img/portfolio/LivingRoomSectionCut.jpg" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/LivingRoomSectionCut.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                @*<a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>*@
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> Card 2</a> </h4>
-                                <p> Card</p>
+                                <h4> <a href="portfolio-details.html"> Living Room Design - Plan View</a> </h4>
+                                @*<p> Card</p>*@
                             </div>
                         </div>
                     </div>
@@ -197,14 +203,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="~/content/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio/portfolio-5.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
+                                <img src="~/content/assets/img/portfolio/LivingRoom.png" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/LivingRoom.png" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                @*<a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>*@
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> Web 2</a> </h4>
-                                <p> Web</p>
+                                <h4> <a href="portfolio-details.html"> Living Room Design Rendering</a> </h4>
+                                @*<p> Web</p>*@
                             </div>
                         </div>
                     </div>
@@ -212,14 +218,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="~/content/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio/portfolio-6.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
+                                <img src="~/content/assets/img/portfolio/LivingRoomReal.jpg" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/LivingRoomReal.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                @*<a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>*@
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> App 3</a> </h4>
-                                <p> App</p>
+                                <h4> <a href="portfolio-details.html"> Living Room Design - Installed</a> </h4>
+                                @*<p> App</p>*@
                             </div>
                         </div>
                     </div>
@@ -227,14 +233,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="~/content/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio/portfolio-7.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
+                                <img src="~/content/assets/img/portfolio/PAHomeTopView.jpg" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/PAHomeTopView.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                @*<a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>*@
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> Card 1</a> </h4>
-                                <p> Card</p>
+                                <h4> <a href="portfolio-details.html"> Pennsylvania Home - Plan View</a> </h4>
+                                @*<p> Overhead</p>*@
                             </div>
                         </div>
                     </div>
@@ -242,14 +248,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="~/content/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio/portfolio-8.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
+                                <img src="~/content/assets/img/portfolio/PAHomeKitchen.jpg" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/PAHomeKitchen.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                @*<a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>*@
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> Card 3</a> </h4>
-                                <p> Card</p>
+                                <h4> <a href="portfolio-details.html"> Pennsylvania Home- Kitchen</a> </h4>
+                                @*<p> Card</p>*@
                             </div>
                         </div>
                     </div>
@@ -257,14 +263,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="~/content/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                                <a href="~/content/assets/img/portfolio/portfolio-9.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
-                                <a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>
+                                <img src="~/content/assets/img/portfolio/LIVINGROOM2.jpg" class="img-fluid" alt="">
+                                <a href="~/content/assets/img/portfolio/LIVINGROOM2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"> <i class="bx bx-plus"> </i> </a>
+                                @*<a href="portfolio-details.html" class="link-details" title="More Details"> <i class="bx bx-link"> </i> </a>*@
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4> <a href="portfolio-details.html"> Web 1</a> </h4>
-                                <p> Web</p>
+                                <h4> <a href="portfolio-details.html"> Pennsylvania - Living Room</a> </h4>
+                                @*<p> Web</p>*@
                             </div>
                         </div>
                     </div>
@@ -280,48 +286,57 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="~/Content/assets/img/work.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0">
-                        <style>
-                            p {
-                                text-decoration-color: #ffffff;
-                            }
-                            h3 {
-                                text-align: center;
-                                text-decoration-color: #ffffff;
-                            }
-                        </style>
-                        <h3>About Me</h3>
-                        <p>
-                            I have been working in Design and Space Planning for seven years and have over four years of experience using various 3D rendering programs.
-                        </p>
-                        <p>
-                            I have always had a passion for design, space planning and problem solving for my clients.
-                        </p>
-                        <ul>
-                            <li><i class="bx bx-check-double"></i> Interior Design training from The University of Missouri</li>
-                            <li><i class="bx bx-check-double"></i> Interior Decorating Certificate from Johnson County Community College.</li>
-                        </ul>
-                        <div class="row icon-boxes">
-                            <div class="col-md-6">
-                                <i class="bx bx-star"></i>
-                                @*<h4>Corporis voluptates sit</h4>*@
-                                <p>Proven customer service skills within the interior design field</p>
+                        <div class="frame">
+                            <img src="~/Content/assets/img/portfolio/selfie.jpg" width="400" height="400" class="img-fluid" alt="Woman working at laptop">
                             </div>
-                            <div class="col-md-6 mt-4 mt-md-0">
-                                <i class="bx bx-star"></i>
-                                @*<h4>Ullamco laboris nisi</h4>*@
-                                <p>Excellent time management and communication skills, ensuring the client gets what they need</p>
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0">
+                            <style>
+                                p {
+                                    color: black;
+                                }
+
+                                h3 {
+                                    text-align: center;
+                                    text-decoration-color: #ffffff;
+                                }
+                            </style>
+                            <h3>About Me</h3>
+                            <p style="color:white">
+                                I have been working in Design and Space Planning for seven years and have over four years of experience using various 3D rendering programs.
+                            </p>
+                            <p style="color:white">
+                                I have always had a passion for design, space planning and problem solving for my clients.
+                            </p>
+                            <ul>
+
+                                <li> <i class="bx bx-check-double"> </i> Interior Design training from The University of Missouri</li>
+                                <li> <i class="bx bx-check-double"> </i> Interior Decorating Certificate from Johnson County Community College.</li>
+
+                            </ul>
+                            <div class="row icon-boxes">
+                                <div class="col-md-6">
+                                    <i class="bx bx-star"></i>
+                                    @*<h4>Corporis voluptates sit</h4>*@
+                                    <p style="color:white">
+                                        Proven customer service skills within the interior design field
+                                    </p>
+                                </div>
+                                <div class="col-md-6 mt-4 mt-md-0">
+                                    <i class="bx bx-star"></i>
+                                    @*<h4>Ullamco laboris nisi</h4>*@
+                                    <p style="color:white">
+                                        Excellent time management and communication skills
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
             </div>
         </section><!-- End About Section -->
         <section id="FAQ" class="FAQ">
-            <div class="container">
+            
                 <div class="container">
 
 
@@ -338,8 +353,9 @@
 
 
 
-                    <div class="" id="accordion">
+                    <div class="accordion" id="accordion">
                         @*<div class="faqHeader">FAQ</div>*@
+                        
                         <div class="card ">
                             <div class="card-header">
                                 <h4 class="card-header">
@@ -348,7 +364,7 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in">
                                 <div class="card-block">
-                                    <strong> - No! The project can be any size ranging from an entire house or building to one room.</strong>
+                                  <p style="color:navy"<strong> - No! The project can be any size ranging from an entire house or building to one room.</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -356,29 +372,30 @@
                             <div class="card-header">
                                 <h4 class="card-header">
                                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                        What program do you use to create the 3D renderings?
+                                        What program do you use to create the 3D renderings
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
                                 <div class="card-block">
-                                    <strong> - SketchUp</strong>
+                                    <p style="color:navy"<strong> - I utilize SketchUp for all 3D renderings</strong></p>
                                 </div>
                             </div>
                         </div>
                         <div class="card ">
                             <div class="card-header">
                                 <h4 class="card-header">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">What do I need to provide?</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        What do I need to provide?
+                                    </a>
                                 </h4>
                             </div>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="card-block">
-                                <strong> - Photos, floor plans, sketches, home/building/room dimensions and finish selections.</strong>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="card-block">
+                                    <p style="color:navy"<strong> - Photos, floor plans, sketches, home/building/room dimensions and finish selections</strong></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <div class="card ">
                         <div class="card-header">
                             <h4 class="card-header">
@@ -387,7 +404,7 @@
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
                             <div class="card-block">
-                                <strong> - Typically you will have your 3D renderings within 24-48 hours depending on the information provided, size of job and detail required.</strong>
+                                <p style="color:navy"<strong> - Typically you will have your 3D renderings within 48 hours depending on the information provided, size of job and detail required.</strong></p>
                             </div>
                         </div>
                     </div>
@@ -399,7 +416,7 @@
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse">
                             <div class="card-block">
-                                <strong> - Absolutely! All you need to do is provide the finish selections and dimensions - I can even come on site to take measurements for you.</strong>
+                                <p style="color:navy"<strong> - Absolutely! All you need to do is provide the finish selections and dimensions - I can even come on site to take measurements for you.</strong></p>
                             </div>
                         </div>
                     </div>
@@ -416,7 +433,7 @@
                     font-family: 'Glyphicons Halflings';
                     content: "e072"; /* "play" icon */
                     float: right;
-                    color: #F58723;
+                    /*color: white;*/
                     font-size: 18px;
                     line-height: 22px;
                     /* rotate "play" icon from > (right arrow) to down arrow */
@@ -444,8 +461,13 @@
 
                 <div class="section-title">
                     <h2> Contact</h2>
-                    <p><em> Feel free to reach out for more information:</em></p>
-                </div>
+                    
+                        <p style="color:white" > <em > Feel free to reach out for more information and also check out my Facebook and Instagram pages</em > </p >
+                        
+                        @*<a href="https://www.facebook.com/3D-Design-Transformations-103586718075165" class="facebook" target="_blank" > <i class="bx bxl-facebook bx-lg"> </i> </a>
+                        <a href="https://www.instagram.com/3ddesigntransformations/?hl=en" class="instagram" target="_blank" > <i class="bx bxl-instagram bx-lg"></i> </a >*@
+                       
+</div>
 
                 @*<div class="row mt-5 justify-content-center">
 
@@ -479,7 +501,7 @@
 
                 <div class="row mt-5 justify-content-center">
                     <div class="col-lg-10">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="~/content/forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="form-row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -565,7 +587,7 @@
                 <div class="mr-md-auto text-center text-md-left">
                     <div class="copyright">
                         &copy; Copyright
-                        <script>document.write(new Date().getFullYear())</script><strong> <span> 3-D Design Transformations</span> </strong> . All Rights Reserved.  Designed by <a href="https://bootstrapmade.com/"> BootstrapMade <span>and Adapted by David Bell</span></a>
+                        <script>document.write(new Date().getFullYear())</script><strong> <span> 3D Design Transformations</span> </strong> . All Rights Reserved.  Designed by <a href="https://bootstrapmade.com/"> BootstrapMade <span>and Adapted by DavidBellDevelops</span></a>
                     </div>
                     @*<div class="credits">
                             <!-- All the links in the footer should remain intact. -->
@@ -578,9 +600,7 @@
                 <div class="social-links text-center text-md-right pt-3 pt-md-0">
                     @*<a href="#" class="twitter"> <i class="bx bxl-twitter"> </i> </a>*@
                     @*<a href="#" class="facebook"> <i class="bx bxl-facebook"> </i> </a>*@
-                    <a href="#" class="instagram"> <i class="bx bxl-instagram"> </i> </a>
                     @*<a href="#" class="google-plus"> <i class="bx bxl-skype"> </i> </a>*@
-                    <a href="#" class="linkedin"> <i class="bx bxl-linkedin"> </i> </a>
                 </div>
             </div>
         </footer>
