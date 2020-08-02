@@ -252,6 +252,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Index.js" />
     <Content Include="Views\Home\PAHomeTopView.jpg" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
@@ -273,6 +274,7 @@
     <Content Include="Content\assets\vendor\owl.carousel\LICENSE" />
     <Content Include="Content\assets\vendor\owl.carousel\README.md" />
     <Content Include="Content\assets\img\portfolio\site.webmanifest" />
+    <Content Include="Content\assets\vendor\GNU_Email_Plugin\GNU_Email_Plugin.php" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
