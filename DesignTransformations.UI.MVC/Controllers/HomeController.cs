@@ -38,7 +38,7 @@ namespace DesignTransformations.UI.MVC.Controllers
                 smtp.Host = System.Configuration.ConfigurationManager.AppSettings["Host"].ToString();
                 smtp.Port = System.Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["port_ssl"].ToString());
                 smtp.EnableSsl = System.Convert.ToBoolean(System.Configuration.ConfigurationManager.AppSettings["tls_ssl_req"].ToString());
-                smtp.UseDefaultCredentials = false;
+                //smtp.UseDefaultCredentials = false;
                 smtp.Credentials = new System.Net.NetworkCredential(System.Configuration.ConfigurationManager.AppSettings["emailAddress"].ToString(),
                     System.Configuration.ConfigurationManager.AppSettings["pwd"].ToString());
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
